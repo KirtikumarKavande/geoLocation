@@ -1,11 +1,13 @@
+import { useEffect } from "react";
+import { useState } from "react";
+import LocationContainer from "./components/LocationContainer";
 
 const App = () => {
-navigator.geolocation.getCurrentPosition((position)=>{
-console.log(position.coords)
-})
   return (
-    <div>App</div>
-  )
-}
+    <div>
+      <LocationContainer />
+    </div>
+  );
+};
 
-export default App
+export default App;
